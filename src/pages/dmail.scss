@@ -1,0 +1,9 @@
+#dmail {
+  display: flex;
+  flex-direction: column;
+
+  #content-container {
+    flex-direction: column;
+    order: 2;
+  }
+}
