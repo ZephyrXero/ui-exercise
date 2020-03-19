@@ -1,0 +1,17 @@
+.email-preview {
+  display: inline-flex;
+  overflow: hidden;
+  width: 100%;
+  word-break: keep-all;
+  margin: 0.5rem;
+  background-color: silver;
+  white-space: nowrap;
+
+  span {
+    margin-right: 1rem;
+  }
+
+  .body {
+    text-overflow: ellipsis;
+  }
+}

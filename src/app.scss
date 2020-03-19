@@ -2,6 +2,12 @@
   padding: 0;
 }
 
+// common classes
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;

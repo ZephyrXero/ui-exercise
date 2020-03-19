@@ -2,13 +2,21 @@
 import React, { useEffect } from 'react';
 
 const SERVER = "http://localhost:3000"; // TODO: choose dynamically from environment
-const initialState = { currentEmail: null };
+const initialState = {
+  currentEmail: null,
+  emailList: []
+};
 
 export const DMailState = React.createContext();
 
-export function DMailPageState(props) {
+export function DMailStateProvider(props) {
   const { children } = props;
-  const [state, setState] = React.useState(initialState);
+  const [state, setState] = React.useState({
+    ...initialState,
+    actions: {
+      setCurrentEmail
+    }
+  });
 
   useEffect(() => {
     getEmails();
@@ -23,7 +31,15 @@ export function DMailPageState(props) {
       .catch(error => console.error('Data file failed to load'));
 
     setState(priorState => {
-      return { ...priorState, ...{ emailList: emails }};
+      return { ...priorState, ...{ emailList: emails.messages }};
+    });
+  }
+
+  function setCurrentEmail(id) {
+    const newId = id ? String(id) : null;
+
+    setState(priorState => {
+      return { ...priorState, ...{ currentEmail: newId } };
     });
   }
 }
