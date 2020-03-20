@@ -1,14 +1,16 @@
+@import '../constants/colors';
+
 #sidebar {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   order: 1;
   width: 15rem;
-  height: calc(100vh - 3rem);
-  border-right: #b4b4b4 1px solid;
+  height: calc(100vh - 4rem);
+  border-right: $grey 1px solid;
 
   #compose-button {
-    background-color: white;
+    background-color: $background;
     border-radius: 10%/50%;
     display: inline-flex;
     align-items: center;

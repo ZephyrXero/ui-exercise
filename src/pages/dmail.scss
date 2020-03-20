@@ -3,7 +3,12 @@
   flex-direction: column;
 
   #content-container {
+    display: flex;
     flex-direction: column;
     order: 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: calc(100vh - 4rem);
+    padding: 1rem;
   }
 }

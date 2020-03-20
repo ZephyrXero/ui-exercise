@@ -1,17 +1,28 @@
-.email-preview {
-  display: inline-flex;
-  overflow: hidden;
-  width: 100%;
-  word-break: keep-all;
-  margin: 0.5rem;
-  background-color: silver;
-  white-space: nowrap;
+@import '../constants/colors';
 
-  span {
-    margin-right: 1rem;
-  }
+#email-list {
+  .email-preview {
+    display: inline-flex;
+    overflow: hidden;
+    width: 100%;
+    word-break: keep-all;
+    white-space: nowrap;
+    background-color: $lighter-grey;
+    border: $light-grey 1px solid;
+    padding: 0.5rem;
 
-  .body {
-    text-overflow: ellipsis;
+    &:hover {
+      box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 10;
+    }
+
+    span {
+      margin-right: 1rem;
+    }
+
+    .body {
+      text-overflow: ellipsis;
+    }
   }
 }

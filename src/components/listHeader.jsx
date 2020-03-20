@@ -1,12 +1,15 @@
 import React from 'react';
 import RefreshIcon from '@material-ui/icons/Refresh';
 
+import './listHeader.scss';
+import EmailCounter from './emailCounter';
+
 function ListHeader() {
   return (
     <div id='list-header'>
       <RefreshIcon />
-      Unread
-      Email Count...
+      <span className='group-label'>Unread</span>
+      <EmailCounter />
     </div>
   );
 }

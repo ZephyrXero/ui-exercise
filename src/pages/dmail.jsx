@@ -14,7 +14,7 @@ function DMail() {
         <Navbar />
         <div className='flex-row'>
           <Sidebar />
-          <div id='content-container' className='flex-column'>
+          <div id='content-container'>
           <DMailState.Consumer>
             {state => state.currentEmail ? <Email /> : <EmailList />}
           </DMailState.Consumer>

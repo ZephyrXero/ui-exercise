@@ -1,9 +1,10 @@
+@import '../constants/colors';
+
 #navbar {
   display: flex;
   flex-direction: row;
-  height: 3rem;
-  box-sizing: border-box;
-  border-bottom: #b4b4b4 1px solid;
+  height: 4rem;
+  border-bottom: $grey 1px solid;
   padding: 0.5rem;
 
   #menu-column {
@@ -31,17 +32,22 @@
       display: inline-flex;
       align-items: center;
       width: 30rem;
-      background-color: #d2d2d2;
+      background-color: $light-grey;
       border-radius: 0.5rem;
       padding: 0.5rem;
+
+      svg {
+        margin-right: 1rem;
+      }
     }
   }
 
   #user-column {
-    display: flex;
+    display: inline-flex;
     flex-grow: 1;
     order: 3;
     justify-content: flex-end;
+    align-items: center;
   }
 
 }

@@ -1,0 +1,23 @@
+#email-header {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.25rem 0;
+  margin-bottom: 1rem;
+
+  svg {
+    padding: 0 0.5rem;
+  }
+
+  .email-counter {
+    margin-left: auto;
+  }
+
+  .flat-button {
+    margin-right: 0.5rem;
+
+    &.back-button {
+      margin-left: -1rem;
+    }
+  }
+}

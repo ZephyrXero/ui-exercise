@@ -7,6 +7,8 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import ReportIcon from '@material-ui/icons/Report';
 
+import './emailHeader.scss';
+import EmailCounter from './emailCounter';
 import DMailState from '../state/dmailState';
 
 function EmailHeader() {
@@ -14,16 +16,16 @@ function EmailHeader() {
 
   return (
     <div id='email-header'>
-      <ArrowBackIcon />
-      |
+      <button className='flat-button back-button' onClick={() => actions.setCurrentEmail(null)}>
+        <ArrowBackIcon />
+      </button>
       <ArchiveIcon />
       <ReportIcon />
       <DeleteIcon />
       <MoreVertIcon />
-      |
-      <span className='email-counter'>{currentEmail} of {emailList.length}</span>
-      <button onClick={goToPrevious}><NavigateBeforeIcon /></button>
-      <button onClick={goToNext}><NavigateNextIcon /></button>
+      <EmailCounter />
+      <button className='flat-button' onClick={goToPrevious}><NavigateBeforeIcon /></button>
+      <button className='flat-button' onClick={goToNext}><NavigateNextIcon /></button>
     </div>
   );
 

@@ -1,9 +1,24 @@
+@import './constants/colors';
+
 .App {
   padding: 0;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
+  background-color: $background;
+}
+
+// default styling
+div {
+  box-sizing: border-box;
 }
 
 // common classes
+.flat-button {
+  background-color: $background;
+  border: 0;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
