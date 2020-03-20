@@ -1,9 +1,11 @@
 import React from 'react';
+import RefreshIcon from '@material-ui/icons/Refresh';
 
 function ListHeader() {
   return (
     <div id='list-header'>
-      Sort v
+      <RefreshIcon />
+      Unread
       Email Count...
     </div>
   );

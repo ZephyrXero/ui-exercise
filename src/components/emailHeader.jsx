@@ -1,4 +1,11 @@
 import React, { useContext } from 'react';
+import ArchiveIcon from '@material-ui/icons/Archive';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import DeleteIcon from '@material-ui/icons/Delete';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import ReportIcon from '@material-ui/icons/Report';
 
 import DMailState from '../state/dmailState';
 
@@ -7,10 +14,16 @@ function EmailHeader() {
 
   return (
     <div id='email-header'>
-      Action Icons...
+      <ArrowBackIcon />
+      |
+      <ArchiveIcon />
+      <ReportIcon />
+      <DeleteIcon />
+      <MoreVertIcon />
+      |
       <span className='email-counter'>{currentEmail} of {emailList.length}</span>
-      <button onClick={goToPrevious}>Previous</button>
-      <button onClick={goToNext}>Next</button>
+      <button onClick={goToPrevious}><NavigateBeforeIcon /></button>
+      <button onClick={goToNext}><NavigateNextIcon /></button>
     </div>
   );
 
