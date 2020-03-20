@@ -1,6 +1,47 @@
 #navbar {
   display: flex;
   flex-direction: row;
-  background-color: blue;
   height: 3rem;
+  box-sizing: border-box;
+  border-bottom: #b4b4b4 1px solid;
+  padding: 0.5rem;
+
+  #menu-column {
+    display: inline-flex;
+    align-items: center;
+    order: 1;
+    width: 15rem;
+    flex-shrink: 0;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+  }
+
+  #search-column {
+    display: flex;
+    order: 2;
+
+    #search-bar {
+      display: inline-flex;
+      align-items: center;
+      width: 30rem;
+      background-color: #d2d2d2;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+    }
+  }
+
+  #user-column {
+    display: flex;
+    flex-grow: 1;
+    order: 3;
+    justify-content: flex-end;
+  }
+
 }

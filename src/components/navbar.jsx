@@ -10,13 +10,21 @@ import './navbar.scss';
 function Navbar() {
   return (
     <div id='navbar'>
-      <MenuIcon />
-      <EmailIcon />
-      <span className='logo-text'>DMail</span>
-      Search bar
-      <SearchIcon />
-      <HelpOutlineIcon />
-      <AccountCircleIcon />
+      <div id='menu-column'>
+        <MenuIcon fontSize='large' />
+        <EmailIcon fontSize='large' />
+        <span className='logo-text'>DMail</span>
+      </div>
+      <div id='search-column'>
+        <div id='search-bar'>
+          <SearchIcon />
+          Search Mail
+        </div>
+      </div>
+      <div id='user-column'>
+        <HelpOutlineIcon fontSize='large' />
+        <AccountCircleIcon fontSize='large' />
+      </div>
     </div>
   )
 }
