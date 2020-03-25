@@ -1,0 +1,46 @@
+@import '../constants/colors';
+
+.email-container {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+
+  .subject {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+
+    .tag {
+      background-color: $light-grey;
+      margin-left: 0.75rem;
+      padding: 0.1rem 0.25rem;
+      font-size: 0.75rem;
+      font-weight: lighter;
+      border-radius: 0.2rem;
+    }
+  }
+
+  .metadata {
+    display: flex;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+
+    .from-to {
+      display: flex-column;
+      margin-left: 0.5rem;
+
+      .sender {
+        font-weight: bolder;
+      }
+    }
+
+    .sent-date {
+      margin: 0 0.5rem 0 auto;
+
+    }
+  }
+
+  .body {
+    padding: 0.5rem;
+  }
+}

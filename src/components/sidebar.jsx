@@ -17,7 +17,9 @@ function Sidebar() {
       <button id='compose-button' onClick={() => console.warn('Compose not implemented')}>
         <AddIcon fontSize='large' /> Compose
       </button>
-      <span className='sidebar-item' onClick={() => actions.setCurrentEmail(null)}><InboxIcon /> Inbox</span>
+      <span className='sidebar-item' onClick={() => actions.setCurrentEmail(null)}>
+        <InboxIcon /> Inbox
+      </span>
       <span className='sidebar-item'><StarIcon /> Starred</span>
       <span className='sidebar-item'><SendIcon /> Sent</span>
       <span className='sidebar-item'><InsertDriveFileIcon /> Drafts</span>
