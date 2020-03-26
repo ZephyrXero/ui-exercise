@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: row;
   height: 4rem;
-  border-bottom: $grey 1px solid;
+  border-bottom: $light-grey 1px solid;
   padding: 0.5rem;
 
   #menu-column {
     display: inline-flex;
     align-items: center;
     order: 1;
-    width: 15rem;
+    width: 14.5rem;
     flex-shrink: 0;
 
     svg {

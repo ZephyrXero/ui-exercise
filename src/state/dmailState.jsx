@@ -14,6 +14,7 @@ export function DMailStateProvider(props) {
   const [state, setState] = React.useState({
     ...initialState,
     actions: {
+      filterEmail,
       setCurrentEmail
     }
   });
@@ -41,6 +42,14 @@ export function DMailStateProvider(props) {
     setState(priorState => {
       return { ...priorState, ...{ currentEmail: newId } };
     });
+  }
+
+  function filterEmail(tag) {
+    setState(priorState => {
+      return { ...priorState, ...{ filterTag: tag }};
+    })
+
+    setCurrentEmail(null);
   }
 }
 

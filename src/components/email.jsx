@@ -16,10 +16,8 @@ function Email() {
       <div className='email-container'>
         <div className='subject'>
         {emailData.subject}
-        {emailData.tags ?
+        {Boolean(emailData.tags.length) &&
           emailData.tags.map(tag => (<span className='tag' key={tag}>{tag}</span>))
-          :
-          null
         }
         </div>
         <div className='metadata'>
