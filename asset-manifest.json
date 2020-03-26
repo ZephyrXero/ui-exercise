@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dmail/static/css/main.5b99f854.chunk.css",
+    "main.js": "/dmail/static/js/main.4de51bec.chunk.js",
+    "main.js.map": "/dmail/static/js/main.4de51bec.chunk.js.map",
+    "runtime-main.js": "/dmail/static/js/runtime-main.b6ea1dbf.js",
+    "runtime-main.js.map": "/dmail/static/js/runtime-main.b6ea1dbf.js.map",
+    "static/js/2.62954d81.chunk.js": "/dmail/static/js/2.62954d81.chunk.js",
+    "static/js/2.62954d81.chunk.js.map": "/dmail/static/js/2.62954d81.chunk.js.map",
+    "index.html": "/dmail/index.html",
+    "precache-manifest.01e62d007228262b9bde2ef2d2d169cd.js": "/dmail/precache-manifest.01e62d007228262b9bde2ef2d2d169cd.js",
+    "service-worker.js": "/dmail/service-worker.js",
+    "static/css/main.5b99f854.chunk.css.map": "/dmail/static/css/main.5b99f854.chunk.css.map",
+    "static/js/2.62954d81.chunk.js.LICENSE.txt": "/dmail/static/js/2.62954d81.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6ea1dbf.js",
+    "static/js/2.62954d81.chunk.js",
+    "static/css/main.5b99f854.chunk.css",
+    "static/js/main.4de51bec.chunk.js"
+  ]
+}
