@@ -32,10 +32,13 @@
 
     .body {
       text-overflow: ellipsis;
+      overflow: hidden;
+      color: $dark-grey;
     }
 
     .date {
       margin-left: auto;
+      font-weight: bold;
     }
   }
 }
