@@ -1,7 +1,10 @@
 // I've opted for a simple state manager via React's Context system
 import React, { useEffect } from 'react';
 
-const SERVER = "http://localhost:3000"; // TODO: choose dynamically from environment
+import config from '../config';
+
+const env = process.env.NODE_ENV;
+const SERVER = config[env].server;
 const initialState = {
   currentEmail: null,
   emailList: []
@@ -31,9 +34,11 @@ export function DMailStateProvider(props) {
       .then(response => response.json())
       .catch(error => console.error('Data file failed to load'));
 
-    setState(priorState => {
-      return { ...priorState, ...{ emailList: emails.messages }};
-    });
+    if(emails) {
+      setState(priorState => {
+        return { ...priorState, ...{ emailList: emails.messages }};
+      });
+    }
   }
 
   function setCurrentEmail(id) {

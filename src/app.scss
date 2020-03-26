@@ -4,12 +4,13 @@
   padding: 0;
   height: 100vh;
   width: 100vw;
+  min-width: 1136px;  // break point in design, would need additional styling for smaller screens
   overflow: hidden;
   background-color: $background;
 }
 
 // default styling
-div {
+div, span {
   box-sizing: border-box;
 }
 
