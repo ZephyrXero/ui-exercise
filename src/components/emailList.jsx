@@ -9,7 +9,7 @@ function EmailList() {
   const { actions, emailList, filterTag } = useContext(DMailState);
 
   return (
-    <div id='email-list'>
+    <div id='email-list' data-testid='email-list'>
       <ListHeader />
       {emailList
         .filter(email => filterTag ? email.tags.includes(filterTag) : true)
